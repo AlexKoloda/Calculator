@@ -1,0 +1,97 @@
+body {
+    background-color: antiquewhite;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.calc {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 7px 7px 0px 0px rgb(0, 0, 0),
+        inset 2px 2px 0px rgb(255 255 255);
+    padding: 0px 10px 10px 10px;
+    background-color: rgb(120, 252, 175);
+
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-auto-rows: 60px;
+    gap: 10px;
+}
+
+.calc-result {
+    grid-column: 1 / -1;
+    background-color: antiquewhite;
+    margin-left: -9px;
+    height: 88px;
+    width: 263px;
+    border-radius: 10PX;
+    border: none;
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 15px 16px 10px 9px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    user-select: none;
+
+}
+
+.calc-input {
+    border: none;
+    width: 285px;
+    margin-left: -9px;
+    grid-column: 1 / -1;
+    background-color: antiquewhite;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 15px;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: default;
+    user-select: none;
+}
+
+.calc-button {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow:
+        2px 3px 0px rgba(0, 0, 0, 0.726),
+        inset 3px 2px 0px rgb(255 255 255);
+    color: rgba(0, 0, 0, 0.685);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.operator {
+    background-color: rgb(235, 210, 178);
+}
+
+.calc-button:hover {
+    background-color: rgb(255, 245, 232);
+    transition: 0.3s;
+    box-shadow: 1px 2px 0px rgba(0, 0, 0, 0.726);
+    color: rgb(0, 0, 0);
+}
+
+.calc-button:active {
+    box-shadow: none;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #78fcaf;
+    text-shadow: 3px 3px 0px black;
+    user-select: none;
+}
